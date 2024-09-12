@@ -1,0 +1,33 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar container styling */
+.navbar {
+    background-color: #333; /* Dark background color */
+    padding: 10px 20px; /* Spacing around the navbar */
+}
+
+/* Navbar links styling */
+.nav-links {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* White text color */
+    font-size: 16px; /* Font size */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-links a:hover {
+    color: #f0f0f0; /* Light color on hover */
+}
