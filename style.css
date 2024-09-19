@@ -1,34 +1,43 @@
 
-body, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+body{background: url(bg.jpg);font-family: 'Oswald', sans-serif;font-size: 15px;font-weight: 400; line-height: 1.5em;}
+.inner_main_menu {margin: 0 auto; width: 1170px;}    
+.inner_main_menu ul{margin: 0; padding: 80px 0 0; list-style: none;text-align: right;}    
+.inner_main_menu ul li{float: none; display: inline-block;position: relative}    
+.inner_main_menu ul li:nth-child(1){float: left;}    
+.inner_main_menu ul li:nth-child(2){float: left;}    
+.inner_main_menu ul li:nth-child(3){float: left;}    
+.inner_main_menu ul li a{color: #262626; font-size: 20px; text-transform: uppercase;text-decoration: none; display: block;padding: 10px 20px;}    
+.inner_main_menu ul li a:hover{color: #6FDA44}  
+.inner_main_menu ul li ul{position: absolute; top: 40px; left: -9999999px; width: 200px;background: #262626; padding: 0;}  
+.inner_main_menu ul li:hover ul{left: 0px;}   
+.inner_main_menu ul li ul li{float: left;width: 100%;text-align: left;}  
+.inner_main_menu ul li ul li a{color: #fff;text-transform: capitalize; font-size: 15px;}  
+.inner_main_menu ul li ul li a:hover{background: #ddd; color: #262626;}  
+.inner_main_menu ul li ul li ul{top: 0; left: -999999px;}  
+.inner_main_menu ul li:hover ul li ul{top: 0; left: -999999px;}  
+.inner_main_menu ul li ul li:hover ul{top: 0; left: 200px;}  
+.inner_main_menu ul li:hover a{color: #6FDA44}  
+.inner_main_menu ul li:hover ul li a{color: #ffffff}  
+.inner_main_menu ul li ul li a:hover{color: #262626}  
+.inner_main_menu ul li ul li:hover a{background: #ddd; color: #262626;}  
+.inner_main_menu ul li ul li:hover ul li a{background: #262626; color: #fff;}  
+.inner_main_menu ul li ul li ul li a:hover{background: #ddd; color: #262626;}  
+.slicknav_menu {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  font-size: 16px;
+  padding: 5px;
+  display: none;    
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 99999;
 }
-
-
-.navbar {
-    background-color: #333; 
-    padding: 10px 20px; 
-}
-
-
-.nav-links {
-    display: flex; 
-    justify-content: center; 
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-.nav-links a {
-    text-decoration: none; 
-    color: white; 
-    font-size: 16px; 
-    transition: color 0.3s; 
-}
-
-.nav-links a:hover {
-    color: #f0f0f0; /* Light color on hover */
+ul.slicknav_nav {
+  background: #262626 none repeat scroll 0 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 80%;
 }
 
 
